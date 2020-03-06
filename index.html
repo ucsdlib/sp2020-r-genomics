@@ -1,20 +1,20 @@
 ---
 layout: workshop
 root: .
-venue: "Intro to R - School of Global Policy and Strategy"      # brief name of host site without address (e.g., "Euphoric State University")
-address: "GPS - Room 3201, 9500 Gilman Drive, #0519, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+venue: "Intro to R - Genomics"      # brief name of host site without address (e.g., "Euphoric State University")
+address: "Biomedical Library Building, 9500 Gilman Drive, #0699, La Jolla, CA"    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
 country: "us"    # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"   # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "32.885125,-117.241173"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "Jan 6 - Jan 20, 2020"  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "3:30 pm -6:30 pm"  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: "2020-01-06"  # use YYYY-MM-DD format like "2015-01-01"
-enddate: "2020-01-20"  # use YYYY-MM-DD format like" 2015-01-02"
-days: "Monday"
-instructor: ["Rick Mccosh (OBGYN-Repro Sci)", "Stephanie Labou (Library)","Justin Shaffer (Pediatrics)", "Reid Otsuji (Library)"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TA - Federico Arroyo"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "rotsuji@ucsd.edu"    # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad: "https://hackmd.io/YcHykvQ2RN6_5EII08muUA" # optional (insert the URL for your Etherpad if you're using one)
+latlng: "32.875274,-117.2391345"     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "Apr 13 - Apr 16, 2020"  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "09:00 am -12:00 pm"  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2020-04-13"  # use YYYY-MM-DD format like "2015-01-01"
+enddate: "2020-04-16"  # use YYYY-MM-DD format like" 2015-01-02"
+days: "Monday - Thursday"
+instructor: [TBD] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Reid Otsuji, Stephanie Labou"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "jreiswig@ucsd.edu"    # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: "https://hackmd.io/@U2NG/BJcE1UeSU" # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
@@ -53,7 +53,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  This is the website for the <a href="{{site.gps_site}}">School of Global Policy and Strategy</a> skills course in the R programming language.  This course will introduce you the R programming language and how to use R to work with data from GapMinder.  In order to earn a certificate of proficiency, you must attend all of the class meetings for the course, do the short coding assignments, and pass the short, in-class quiz at the end of the course.  
+  This is the website for the Introduction to R for Genomics workshop series.  This workshop will introduce you the R programming language and how to use R and RStudio to work with genomics data.
 </p>
 
 
@@ -65,8 +65,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at GPS graduate students.
-  <strong>You don't need to have any previous knowledge of programming or the tools presented in the course to attend.  A laptop is required for the class.</strong>
+  The course is aimed at facutly, graduate students, Post-Docs who work with genomics data.
+  <strong>You don't need to have any previous knowledge of programming or the tools presented in the course to attend.  A laptop is required for the workshop.</strong>
 </p>
 
 <!--
@@ -116,7 +116,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   {% endif %}
   for more information.
 </p>
-
+<!--
 <p id="certificate">
 <strong>Assessment</strong>:
 A certificate of proficiency will be given to the student who:
@@ -127,22 +127,24 @@ A certificate of proficiency will be given to the student who:
 <li>40% Passes all in-course quizzes</li>
 <li>40% Satisfactorily completes the weekly homework assignments</li>
 </ul>
-
+-->
 <p id="help">
 {% if site.lib_appt %}
   <strong>Need help?</strong>:
   <ul>
     <li> Reid Otsuji: Email <a href='mailto:{{page.contact}}'>{{page.contact}}</a></li>
 {% endif %}
-  <li>TA Federico Arroyo <a href='mailto:faarroyo@ucsd.edu'>faarroyo@ucsd.edu</a>, Office Hours: TBD<!-- <a href="{{site.lib_data_lab}}">Library Data/GIS Lab</a> --> in GPS Space</li>
+  <li>Stephanie Labou <a href='mailto:slabou@ucsd.edu'>slabou@ucsd.edu</a> Data Science Librarian<a href="{{site.lib_data_lab}}">Library Data/GIS Lab</a></li>
   <li><a href="{{site.lib_data_lab}}">Library Data/GIS Lab</a> has R specialists</li>
 </ul>
 </p>
+
+<!--
 <p id = "data">
 <strong>Data:</strong> We will be using the 5 year <a href="http://www.gapminder.org/data/">gapminder data</a>. You can go ahead and set up a RStudio project and download the data following these <a href="newproject.html">instructions</a>. The CSV can be downloaded from <a href="https://raw.githubusercontent.com/resbaz/r-novice-gapminder-files/master/data/gapminder-FiveYearData.csv">here</a>.
 
 </p>
-
+-->
 <strong>Lecture notes & command histories:</strong>
 
 {% capture notes %}{% include notes.md %}{% endcapture %}
@@ -313,9 +315,8 @@ A certificate of proficiency will be given to the student who:
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in this course, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
+  To participate in this workshop, you will need
+  access to the software described below.
 </p>
 
 <div id="r"> <!-- Start of 'R' section. -->
