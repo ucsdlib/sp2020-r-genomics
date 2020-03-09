@@ -1,8 +1,8 @@
 #--------------------------------------------------------------------------------
 # Values for this workshop - EDIT THIS SECTION.
 #--------------------------------------------------------------------------------
-workshop_repo   : "https://github.com/ucsdlib/win2018-gps-r"
-workshop_site   : "http://ucsdlib.github.io/win2018-gps-r"
+workshop_repo   : "https://github.com/ucsdlib/sp2020-r-genomics/"
+workshop_site   : "https://ucsdlib.github.io/sp2020-r-genomics/"
 #--------------------------------------------------------------------------------
 # Standard Software Carpentry settings - should not need to be modified.
 #--------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ swc_post_survey : "https://www.surveymonkey.com/r/swc_post_workshop_v1?workshop_
 #--------------------------------------------------------------------------------
 lib_site        : "http://libraries.ucsd.edu"
 lib_rdcp        : "http://libraries.ucsd.edu/rdcp"
-lib_data_svcs   : "http://ucsd.libguides.com/data-services"
-lib_data_lab    : "http://ucsd.libguides.com/data-gis-lab"
+lib_data_svcs   : "https://library.ucsd.edu/computing-and-technology/data-and-gis-lab/index.html"
+lib_data_lab    : "https://library.ucsd.edu/computing-and-technology/data-and-gis-lab/index.html"
 gps_site        : "http://gps.ucsd.edu"
 lib_contact     : "rotsuji@ucsd.edu"
 lib_appt        : ""
